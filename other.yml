@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: false
+  connection: local
+  vars:
+    msg: 'hello'
+  tasks:
+    - name: Debug variable msg
+      debug: var=msg
